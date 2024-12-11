@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 const EmailVerifyPage = () => {
   const { verifytoken } = useParams(); // Retrieve token from route parameters
+  console.log(verifytoken);
   const [verify, setVerify] = useState(""); // State to display the verification message
 
   // API endpoint with the dynamic token
